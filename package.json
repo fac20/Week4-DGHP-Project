@@ -3,7 +3,6 @@
 {
     "scripts": {
       "lint": "eslint .",
-      "test": "jest --coverage",
-      "test:watch": "jest --watch"
+     
     }
 }
