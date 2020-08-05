@@ -1,0 +1,21 @@
+body {
+  background-color: #31363a;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+button {
+  background-image: url("http://2.bp.blogspot.com/-FyWPRgTpb9U/Um2Fj3sl6pI/AAAAAAAAQhI/QAhIuF2nCLA/s1600/Rope-seamless-tiling-patterns-1.jpg");
+  background-size: cover;
+  width: 5px;
+  height: 500px;
+  margin-right: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  height: 600px;
+  transition: 1s;
+}
