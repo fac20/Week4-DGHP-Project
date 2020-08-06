@@ -50,6 +50,10 @@ body {
   transition: 1s;
 }
 
+.hideBulb {
+  display: none;
+}
+
 form {
   width: 50%;
   margin-left: 10%;
@@ -112,14 +116,24 @@ form {
 }
 
 .post {
+  margin: 2rem 2rem;
+  width: 70vw;
   border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.4s;
+  box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.9s;
+  padding: 2rem;
   }  
 
  .post:hover {
     transform: scale(0.9, 0.9);
+    /* box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22); */
+  }
+  
+
+/* create medai querie. for rope on large screen to be more centered. */
+  transform: scale(0.2, 0.2);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
       -5px -5px 30px 15px rgba(0,0,0,0.22);
   }
@@ -129,5 +143,59 @@ form {
   width: 20px;
   
 }
+
+/* create medai querie. for rope on large screen to be more centered. */
+  transform: scale(0.2, 0.2);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+
+
+
+/* create medai querie. for rope on large screen to be more centered. */
+  transform: scale(0.2, 0.2);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+
+/* create medai querie. for rope on large screen to be more centered. */
+  transform: scale(0.2, 0.2);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+/* create medai querie. for rope on large screen to be more centered. */
+  transform: scale(0.2, 0.2);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+
+/* create medai querie. for rope on large screen to be more centered. */
+  transform: scale(0.2, 0.2);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+
+
+
+/* create medai querie. for rope on large screen to be more centered. */
+  transform: scale(0.2, 0.2);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+
+
+/* create medai querie. for rope on large screen to be more centered. */
+  transform: scale(0.2, 0.2);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+
 
 /* create medai querie. for rope on large screen to be more centered. */

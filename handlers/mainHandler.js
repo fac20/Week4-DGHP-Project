@@ -17,7 +17,6 @@ function mainHandler(request, response) {
         return `<article class="post">
         <h2 class="post-title">${messageObject.title}</h2>
         <p class="post-message">${messageObject.message}</p>
-        <button class="delete-button"></button>
       </article>`;
       });
       const newFile = file.replace(
