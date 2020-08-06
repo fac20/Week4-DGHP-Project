@@ -1,25 +1,47 @@
+:root {
+  --background-color: hsl(207, 8%, 21%);
+  --bulb-color: hsl(54, 100%, 74%);
+}
+
 body {
-  display: flex;
-  justify-content: flex-end;
   margin: 0;
 }
 
+/* CSS for landing page background colour */
 .dark-background {
-  background-color: #31363a;
+  background-color: var(--background-color);
 }
 
 .rope {
-  display: block;
+  position: fixed;
   background-image: url("http://2.bp.blogspot.com/-FyWPRgTpb9U/Um2Fj3sl6pI/AAAAAAAAQhI/QAhIuF2nCLA/s1600/Rope-seamless-tiling-patterns-1.jpg");
   background-size: cover;
   width: 10px;
   height: 500px;
-  margin-right: 50px;
   border: none;
   cursor: pointer;
+  right: 25px;
+  top: 0;
 }
 
+/* transition is buggy index.HTML */
 .rope:hover {
   height: 600px;
   transition: 1s;
 }
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bulb-color);
+}
+
+textarea {
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+  border-radius: 50%;
+}
+
+/* create medai querie. for rope on large screen to be more centered. */
