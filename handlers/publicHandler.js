@@ -11,13 +11,13 @@ const types = {
     ico: "image/x-icon",
   };
 
-function homeHandler(request, response) {
+function publicHandler(request, response) {
   const url = request.url; //url is / so we can't split to get content type
   const urlArray = url.split(".");
   const extension = urlArray[1];
   const type = types[extension]; // type is undefined => types[undefined] 
 
-  const filePath = path.join(__dirname, "..", "public",  "index.html");
+  const filePath = path.join(__dirname, "..", url);
   console.log(url);
   console.log(filePath);
   fs.readFile(filePath, (error, file) =>{
@@ -27,12 +27,18 @@ function homeHandler(request, response) {
       response.end("<h1>Not found</h1>");
     }
     else{
-      response.writeHead(200, { "content-type": "text/html" });
+      response.writeHead(200, { "content-type": type });
       response.end(file);
     }
 
 
   });
+
+    // response.writeHead(200, {"content-type": "text/html"});
+
+    // console.log("home handler ");
+
+    // response.end("<h1>Hello</h1>");
 }
 
-module.exports = homeHandler;
+module.exports = publicHandler;
