@@ -4,8 +4,10 @@
   "description": "## INTRO",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "node test.js | tap-spec",
+    "start": "node server.js",
+    "watch": "nodemon",
+    "prettier": "prettier --write"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,19 @@
   "bugs": {
     "url": "https://github.com/fac20/Week4-DGHP-Project/issues"
   },
-  "homepage": "https://github.com/fac20/Week4-DGHP-Project#readme"
+  "homepage": "https://github.com/fac20/Week4-DGHP-Project#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "prettier": "2.0.5",
+    "supertest": "^4.0.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.1"
+  },
+  "prettierConfig": {
+    "printWidth": null,
+    "tabWidth": 2,
+    "useTabs": true,
+    "semi": false,
+    "singleQuote": true
+  }
 }
