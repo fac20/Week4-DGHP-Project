@@ -4,12 +4,10 @@ const fs = require("fs");
 const path = require("path");
 
 
+function mainHandler(request, response) {
 
-function homeHandler(request, response) {
 
-
-  const filePath = path.join(__dirname, "..", "public",  "index.html");
-
+  const filePath = path.join(__dirname, "..", "public",  "main.html");
   console.log(filePath);
   fs.readFile(filePath, (error, file) =>{
     if (error) {
@@ -26,4 +24,4 @@ function homeHandler(request, response) {
   });
 }
 
-module.exports = homeHandler;
+module.exports = mainHandler;
