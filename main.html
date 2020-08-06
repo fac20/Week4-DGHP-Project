@@ -10,9 +10,24 @@
   <body>
     <header>
       <button class="rope" aria-label="view message board"></button>
+      <form action="">
+        <button type="reset" class="thread-button" id="reset-button">
+          RESET
+        </button>
+        <button type="submit" class="thread-button" id="submit">POST</button>
+        <input type="text" class="thread-button" id="title-input" required />
+        <textarea rows="5" cols="20" id="message"></textarea>
+      </form>
     </header>
     <main></main>
     <footer></footer>
+    <template>
+      <article class="post">
+        <h2 class="post-title">Title</h2>
+        <p class="post-message">Message</p>
+        <button class="delete-button"></button>
+      </article>
+    </template>
     <script src="script.js"></script>
     <script src="router.js"></script>
     <script src="test.js"></script>

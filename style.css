@@ -1,8 +1,11 @@
 body {
-  background-color: #31363a;
   display: flex;
   justify-content: flex-end;
   margin: 0;
+}
+
+.dark-background {
+  background-color: #31363a;
 }
 
 .rope {
