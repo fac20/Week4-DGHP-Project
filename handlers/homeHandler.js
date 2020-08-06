@@ -4,12 +4,9 @@ const fs = require("fs");
 const path = require("path");
 
 
-
 function homeHandler(request, response) {
 
-
   const filePath = path.join(__dirname, "..", "public",  "index.html");
-
   console.log(filePath);
   fs.readFile(filePath, (error, file) =>{
     if (error) {
