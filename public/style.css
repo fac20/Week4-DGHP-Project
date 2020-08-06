@@ -1,11 +1,25 @@
 :root {
   --background-color: hsl(207, 8%, 21%);
   --bulb-color: hsl(54, 100%, 74%);
-  --bulb-background: linear-gradient(#efe980, #f1eb78, #f3ec72, #f6ec6c, #f8ed66, #fbed5f);
-  --bulb-join: linear-gradient(#dad7b6, #dedbac, #e2dea2, #e6e298, #eae58e, #ece787);
+  --bulb-background: linear-gradient(
+    #efe980,
+    #f1eb78,
+    #f3ec72,
+    #f6ec6c,
+    #f8ed66,
+    #fbed5f
+  );
+  --bulb-join: linear-gradient(
+    #dad7b6,
+    #dedbac,
+    #e2dea2,
+    #e6e298,
+    #eae58e,
+    #ece787
+  );
   --white: hsl(100, 100%, 100%);
   --buttons-background: hsl(202, 12%, 70%);
-  --main-font: 'Poppins', sans-serif;
+  --main-font: "Poppins", sans-serif;
 }
 
 body {
@@ -53,6 +67,8 @@ form {
   border-radius: 50%;
   box-shadow: 0px 8px 8px #aaa;
   overflow: hidden;
+  align-self: center;
+  order: 5;
 }
 
 .join {
@@ -64,6 +80,7 @@ form {
   border-radius: 7px 7px 0 0;
   width: 125px;
   height: 40px;
+  order: 4;
 }
 
 .thread-button {
@@ -79,16 +96,19 @@ form {
 #title-input {
   width: 110px;
   align-self: center;
+  order: 3;
 }
 
 #submit {
   width: 100px;
   align-self: center;
+  order: 2;
 }
 
 #reset-button {
   width: 90px;
   align-self: center;
+  order: 1;
 }
 
 /* create medai querie. for rope on large screen to be more centered. */
