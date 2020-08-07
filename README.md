@@ -5,7 +5,7 @@
 This week, we have been asked to build a microblogging website that allow users to submit their own posts as well as view others
 **This Week's focus - Node!**
 
-Link to webpage https://fac20.github.io/Week4-DGHP-Project/
+Link to webpage https://week4-node.herokuapp.com/
 
 
 ## THEME
