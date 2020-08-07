@@ -1,24 +1,24 @@
 :root {
   --background-color: hsl(207, 8%, 21%);
   --bulb-color: hsl(54, 100%, 74%);
-  --bulb-background: linear-gradient(
-    #efe980,
-    #f1eb78,
-    #f3ec72,
-    #f6ec6c,
-    #f8ed66,
-    #fbed5f
-  );
-  --bulb-join: linear-gradient(
-    #dad7b6,
-    #dedbac,
-    #e2dea2,
-    #e6e298,
-    #eae58e,
-    #ece787
-  );
+  --bulb-background: linear-gradient(#dedbac,
+      #dedbac,
+      #eae58e,
+      #ece787,
+      #efe980,
+      #f1eb78,
+      #f3ec72,
+      #f6ec6c,
+      #f8ed66,
+      #fbed5f);
+  --bulb-join: linear-gradient(#dad7b6,
+      #dedbac,
+      #e2dea2,
+      #e6e298,
+      #eae58e,
+      #ece787);
   --white: hsl(100, 100%, 100%);
-  --buttons-background: hsl(202, 12%, 70%);
+  --buttons-background: hsl(202, 7%, 33%);
   --main-font: "Poppins", sans-serif;
 }
 
@@ -77,7 +77,7 @@ form {
 }
 
 .join {
-  z-index: 2;
+  z-index: -1;
   margin-top: 5px;
   margin-bottom: -35px;
   align-self: center;
@@ -88,7 +88,8 @@ form {
   order: 4;
 }
 
-.thread-button, .delete-button {
+.thread-button,
+.delete-button {
   background-color: var(--buttons-background);
   border-color: transparent;
   box-shadow: 0px 3px 3px hsl(0, 0%, 67%), inset 0px 2px 3px hsl(0, 5%, 85%);
@@ -102,6 +103,11 @@ form {
   width: 110px;
   align-self: center;
   order: 3;
+}
+
+#title-input,
+#title-input::placeholder {
+  color: var(--white);
 }
 
 #submit {
@@ -120,86 +126,102 @@ form {
   margin: 2rem 2rem;
   width: 70vw;
   border-radius: 40px;
-  box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  box-shadow: 0px 0px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   transition: 0.9s;
   padding: 2rem;
-  background-color: white;
-}  
+  background-color: var(--white);
+}
+
+.title {
+  font-family: var(--main-font);
+  color: var(--white);
+  font-size: 1.2rem;
+  width: 80%;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.instructions {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  color: var(--white);
+  text-align: right;
+  margin-right: 20%;
+}
 
 .post:hover {
-    transform: scale(0.9, 0.9);
-    /* box-shadow: 0px 0px 30px 7px rgba(250, 232, 232, 0.25), -5px -5px 30px 7px rgba(241, 226, 226, 0.22); */
+  transform: scale(0.9, 0.9);
+  /* box-shadow: 0px 0px 30px 7px rgba(250, 232, 232, 0.25), -5px -5px 30px 7px rgba(241, 226, 226, 0.22); */
 
-    /* box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+  /* box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
     -5px -5px 30px 15px rgba(0,0,0,0.22); */
 }
-  
+
 
 /* create medai querie. for rope on large screen to be more centered. */
-  transform: scale(0.2, 0.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
+transform: scale(0.2, 0.2);
+box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
 
 .delete-button {
   width: 20px;
-  
+
 }
 
 /* create medai querie. for rope on large screen to be more centered. */
-  transform: scale(0.2, 0.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
+transform: scale(0.2, 0.2);
+box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
 
-
-
-/* create medai querie. for rope on large screen to be more centered. */
-  transform: scale(0.2, 0.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
-
-/* create medai querie. for rope on large screen to be more centered. */
-  transform: scale(0.2, 0.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
-/* create medai querie. for rope on large screen to be more centered. */
-  transform: scale(0.2, 0.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
-
-/* create medai querie. for rope on large screen to be more centered. */
-  transform: scale(0.2, 0.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
 
 
 
 /* create medai querie. for rope on large screen to be more centered. */
-  transform: scale(0.2, 0.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
+transform: scale(0.2, 0.2);
+box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
 
 
 /* create medai querie. for rope on large screen to be more centered. */
-  transform: scale(0.2, 0.2);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-  
+transform: scale(0.2, 0.2);
+box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+/* create medai querie. for rope on large screen to be more centered. */
+transform: scale(0.2, 0.2);
+box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+
+/* create medai querie. for rope on large screen to be more centered. */
+transform: scale(0.2, 0.2);
+box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+
+
+
+/* create medai querie. for rope on large screen to be more centered. */
+transform: scale(0.2, 0.2);
+box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+
+
+/* create medai querie. for rope on large screen to be more centered. */
+transform: scale(0.2, 0.2);
+box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+-5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
 
 
 /* create medai querie. for rope on large screen to be more centered. */

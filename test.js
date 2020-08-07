@@ -48,3 +48,11 @@ test("Public handler: check status code is 200 and contents of CSS", (t) => {
       t.end();
     });
 });
+
+// test("sending form data", t => {
+//   supertest(router)
+//     .post("/submit")
+//     .send("title-input=test&title")
+//     .expect(200)
+//     .end()
+// })

@@ -1,9 +1,7 @@
 // this will serve the landing page html
-
 const database = require("../model");
-// const filePath = path.join(__dirname, "..", "public",  "main.html");
-// fs.readFile(filePath, (error, file) =>{
 
+// when clicking submit button, it should display the forum
 function submitHandler(request, response) {
   // get contents of form
   let body = "";
@@ -22,13 +20,16 @@ function submitHandler(request, response) {
     };
     // store object into database(array)
     database.unshift(object);
-    console.log(database);
     // adding variables, the title and the message and add it into a text file
-    response.writeHead(302, { location: "/main" });
+    response.writeHead(302, {
+      location: "/main"
+    });
     response.end();
   });
   request.on("error", (error) => {
-    response.writeHead(500, { "content-type": "text/html" });
+    response.writeHead(500, {
+      "content-type": "text/html"
+    });
     response.end("<h1>Server error</h1>");
   });
 }
